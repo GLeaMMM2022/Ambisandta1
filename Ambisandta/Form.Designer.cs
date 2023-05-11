@@ -43,7 +43,7 @@
             // 
             this.buttonRules.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.buttonRules.Location = new System.Drawing.Point(1404, 23);
-            this.buttonRules.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonRules.Margin = new System.Windows.Forms.Padding(6);
             this.buttonRules.Name = "buttonRules";
             this.buttonRules.Size = new System.Drawing.Size(172, 63);
             this.buttonRules.TabIndex = 1;
@@ -54,25 +54,25 @@
             // 
             this.buttonOssetian1.Location = new System.Drawing.Point(294, 163);
             this.buttonOssetian1.Name = "buttonOssetian1";
-            this.buttonOssetian1.Size = new System.Drawing.Size(261, 86);
+            this.buttonOssetian1.Size = new System.Drawing.Size(305, 136);
             this.buttonOssetian1.TabIndex = 2;
-            this.buttonOssetian1.Text = "Хорзӕн бын ма скӕн, ӕвзӕрӕн бын ма ныууадз\r\n";
+            this.buttonOssetian1.Text = "Буцхаст уӕздан кӕны, уӕздан магуса кӕны, магуса та сӕфтмӕ цӕуы";
             this.buttonOssetian1.UseVisualStyleBackColor = true;
             // 
             // buttonOssetian2
             // 
-            this.buttonOssetian2.Location = new System.Drawing.Point(294, 324);
+            this.buttonOssetian2.Location = new System.Drawing.Point(294, 356);
             this.buttonOssetian2.Name = "buttonOssetian2";
-            this.buttonOssetian2.Size = new System.Drawing.Size(261, 80);
+            this.buttonOssetian2.Size = new System.Drawing.Size(305, 136);
             this.buttonOssetian2.TabIndex = 3;
             this.buttonOssetian2.Text = "Ӕфсӕст стонджы не \'мбары";
             this.buttonOssetian2.UseVisualStyleBackColor = true;
             // 
             // buttonOssetian3
             // 
-            this.buttonOssetian3.Location = new System.Drawing.Point(294, 517);
+            this.buttonOssetian3.Location = new System.Drawing.Point(294, 556);
             this.buttonOssetian3.Name = "buttonOssetian3";
-            this.buttonOssetian3.Size = new System.Drawing.Size(261, 79);
+            this.buttonOssetian3.Size = new System.Drawing.Size(305, 136);
             this.buttonOssetian3.TabIndex = 4;
             this.buttonOssetian3.Text = "Адӕм кӕрӕдзи фӕрцы цӕрынц";
             this.buttonOssetian3.UseVisualStyleBackColor = true;
@@ -81,25 +81,25 @@
             // 
             this.buttonRussian1.Location = new System.Drawing.Point(856, 163);
             this.buttonRussian1.Name = "buttonRussian1";
-            this.buttonRussian1.Size = new System.Drawing.Size(261, 86);
+            this.buttonRussian1.Size = new System.Drawing.Size(305, 136);
             this.buttonRussian1.TabIndex = 5;
-            this.buttonRussian1.Text = "button4";
+            this.buttonRussian1.Text = "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели";
             this.buttonRussian1.UseVisualStyleBackColor = true;
             // 
             // buttonRussian2
             // 
-            this.buttonRussian2.Location = new System.Drawing.Point(856, 324);
+            this.buttonRussian2.Location = new System.Drawing.Point(856, 356);
             this.buttonRussian2.Name = "buttonRussian2";
-            this.buttonRussian2.Size = new System.Drawing.Size(261, 80);
+            this.buttonRussian2.Size = new System.Drawing.Size(305, 136);
             this.buttonRussian2.TabIndex = 6;
-            this.buttonRussian2.Text = "button5";
+            this.buttonRussian2.Text = "Сытый голодного не разумеет";
             this.buttonRussian2.UseVisualStyleBackColor = true;
             // 
             // buttonRussian3
             // 
-            this.buttonRussian3.Location = new System.Drawing.Point(856, 517);
+            this.buttonRussian3.Location = new System.Drawing.Point(856, 556);
             this.buttonRussian3.Name = "buttonRussian3";
-            this.buttonRussian3.Size = new System.Drawing.Size(263, 80);
+            this.buttonRussian3.Size = new System.Drawing.Size(305, 136);
             this.buttonRussian3.TabIndex = 7;
             this.buttonRussian3.Text = "Люди живут благодаря друг другу";
             this.buttonRussian3.UseVisualStyleBackColor = true;
@@ -116,7 +116,7 @@
             this.Controls.Add(this.buttonOssetian2);
             this.Controls.Add(this.buttonOssetian1);
             this.Controls.Add(this.buttonRules);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form";
             this.Text = "Form1";
             this.ResumeLayout(false);
