@@ -31,12 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.buttonRules = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.buttonOssetian1 = new System.Windows.Forms.Button();
-            this.buttonOssetian2 = new System.Windows.Forms.Button();
-            this.buttonOssetian3 = new System.Windows.Forms.Button();
             this.buttonRussian1 = new System.Windows.Forms.Button();
             this.buttonRussian2 = new System.Windows.Forms.Button();
-            this.buttonRussian3 = new System.Windows.Forms.Button();
+            this.labelOssetian1 = new System.Windows.Forms.Label();
+            this.labelOssetian2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonRules
@@ -50,33 +48,6 @@
             this.buttonRules.Text = "Правила";
             this.buttonRules.UseVisualStyleBackColor = true;
             // 
-            // buttonOssetian1
-            // 
-            this.buttonOssetian1.Location = new System.Drawing.Point(294, 163);
-            this.buttonOssetian1.Name = "buttonOssetian1";
-            this.buttonOssetian1.Size = new System.Drawing.Size(305, 136);
-            this.buttonOssetian1.TabIndex = 2;
-            this.buttonOssetian1.Text = "Буцхаст уӕздан кӕны, уӕздан магуса кӕны, магуса та сӕфтмӕ цӕуы";
-            this.buttonOssetian1.UseVisualStyleBackColor = true;
-            // 
-            // buttonOssetian2
-            // 
-            this.buttonOssetian2.Location = new System.Drawing.Point(294, 356);
-            this.buttonOssetian2.Name = "buttonOssetian2";
-            this.buttonOssetian2.Size = new System.Drawing.Size(305, 136);
-            this.buttonOssetian2.TabIndex = 3;
-            this.buttonOssetian2.Text = "Ӕфсӕст стонджы не \'мбары";
-            this.buttonOssetian2.UseVisualStyleBackColor = true;
-            // 
-            // buttonOssetian3
-            // 
-            this.buttonOssetian3.Location = new System.Drawing.Point(294, 556);
-            this.buttonOssetian3.Name = "buttonOssetian3";
-            this.buttonOssetian3.Size = new System.Drawing.Size(305, 136);
-            this.buttonOssetian3.TabIndex = 4;
-            this.buttonOssetian3.Text = "Адӕм кӕрӕдзи фӕрцы цӕрынц";
-            this.buttonOssetian3.UseVisualStyleBackColor = true;
-            // 
             // buttonRussian1
             // 
             this.buttonRussian1.Location = new System.Drawing.Point(856, 163);
@@ -85,6 +56,7 @@
             this.buttonRussian1.TabIndex = 5;
             this.buttonRussian1.Text = "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели";
             this.buttonRussian1.UseVisualStyleBackColor = true;
+            this.buttonRussian1.Click += new System.EventHandler(this.buttonRussian1_Click);
             // 
             // buttonRussian2
             // 
@@ -94,44 +66,51 @@
             this.buttonRussian2.TabIndex = 6;
             this.buttonRussian2.Text = "Сытый голодного не разумеет";
             this.buttonRussian2.UseVisualStyleBackColor = true;
+            this.buttonRussian2.Click += new System.EventHandler(this.buttonRussian1_Click);
             // 
-            // buttonRussian3
+            // labelOssetian1
             // 
-            this.buttonRussian3.Location = new System.Drawing.Point(856, 556);
-            this.buttonRussian3.Name = "buttonRussian3";
-            this.buttonRussian3.Size = new System.Drawing.Size(305, 136);
-            this.buttonRussian3.TabIndex = 7;
-            this.buttonRussian3.Text = "Люди живут благодаря друг другу";
-            this.buttonRussian3.UseVisualStyleBackColor = true;
+            this.labelOssetian1.AutoSize = true;
+            this.labelOssetian1.Location = new System.Drawing.Point(289, 210);
+            this.labelOssetian1.Name = "labelOssetian1";
+            this.labelOssetian1.Size = new System.Drawing.Size(356, 75);
+            this.labelOssetian1.TabIndex = 8;
+            this.labelOssetian1.Text = "Буцхаст уӕздан кӕны, уӕздан\r\n магуса кӕны, магуса та сӕфтмӕ\r\n цӕуы";
+            // 
+            // labelOssetian2
+            // 
+            this.labelOssetian2.AutoSize = true;
+            this.labelOssetian2.Location = new System.Drawing.Point(289, 421);
+            this.labelOssetian2.Name = "labelOssetian2";
+            this.labelOssetian2.Size = new System.Drawing.Size(300, 25);
+            this.labelOssetian2.TabIndex = 9;
+            this.labelOssetian2.Text = "Ӕфсӕст стонджы не \'мбары";
             // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1600, 865);
-            this.Controls.Add(this.buttonRussian3);
+            this.Controls.Add(this.labelOssetian2);
+            this.Controls.Add(this.labelOssetian1);
             this.Controls.Add(this.buttonRussian2);
             this.Controls.Add(this.buttonRussian1);
-            this.Controls.Add(this.buttonOssetian3);
-            this.Controls.Add(this.buttonOssetian2);
-            this.Controls.Add(this.buttonOssetian1);
             this.Controls.Add(this.buttonRules);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Button buttonRules;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button buttonOssetian1;
-        private System.Windows.Forms.Button buttonOssetian2;
-        private System.Windows.Forms.Button buttonOssetian3;
         private System.Windows.Forms.Button buttonRussian1;
         private System.Windows.Forms.Button buttonRussian2;
-        private System.Windows.Forms.Button buttonRussian3;
+        private System.Windows.Forms.Label labelOssetian1;
+        private System.Windows.Forms.Label labelOssetian2;
     }
 }
 
