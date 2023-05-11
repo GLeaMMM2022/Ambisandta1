@@ -30,94 +30,108 @@
         {
             this.components = new System.ComponentModel.Container();
             this.buttonRules = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBoxAnswer1 = new System.Windows.Forms.TextBox();
-            this.textBoxAnswer2 = new System.Windows.Forms.TextBox();
-            this.textBoxAnswer3 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.buttonOssetian1 = new System.Windows.Forms.Button();
+            this.buttonOssetian2 = new System.Windows.Forms.Button();
+            this.buttonOssetian3 = new System.Windows.Forms.Button();
+            this.buttonRussian1 = new System.Windows.Forms.Button();
+            this.buttonRussian2 = new System.Windows.Forms.Button();
+            this.buttonRussian3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonRules
             // 
-            this.buttonRules.Location = new System.Drawing.Point(702, 12);
+            this.buttonRules.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.buttonRules.Location = new System.Drawing.Point(1404, 23);
+            this.buttonRules.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.buttonRules.Name = "buttonRules";
-            this.buttonRules.Size = new System.Drawing.Size(86, 33);
+            this.buttonRules.Size = new System.Drawing.Size(172, 63);
             this.buttonRules.TabIndex = 1;
             this.buttonRules.Text = "Правила";
             this.buttonRules.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // buttonOssetian1
             // 
-            this.textBox1.Location = new System.Drawing.Point(181, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.buttonOssetian1.Location = new System.Drawing.Point(294, 163);
+            this.buttonOssetian1.Name = "buttonOssetian1";
+            this.buttonOssetian1.Size = new System.Drawing.Size(261, 86);
+            this.buttonOssetian1.TabIndex = 2;
+            this.buttonOssetian1.Text = "Хорзӕн бын ма скӕн, ӕвзӕрӕн бын ма ныууадз\r\n";
+            this.buttonOssetian1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // buttonOssetian2
             // 
-            this.textBox2.Location = new System.Drawing.Point(181, 194);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.buttonOssetian2.Location = new System.Drawing.Point(294, 324);
+            this.buttonOssetian2.Name = "buttonOssetian2";
+            this.buttonOssetian2.Size = new System.Drawing.Size(261, 80);
+            this.buttonOssetian2.TabIndex = 3;
+            this.buttonOssetian2.Text = "Ӕфсӕст стонджы не \'мбары";
+            this.buttonOssetian2.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // buttonOssetian3
             // 
-            this.textBox3.Location = new System.Drawing.Point(181, 270);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
+            this.buttonOssetian3.Location = new System.Drawing.Point(294, 517);
+            this.buttonOssetian3.Name = "buttonOssetian3";
+            this.buttonOssetian3.Size = new System.Drawing.Size(261, 79);
+            this.buttonOssetian3.TabIndex = 4;
+            this.buttonOssetian3.Text = "Адӕм кӕрӕдзи фӕрцы цӕрынц";
+            this.buttonOssetian3.UseVisualStyleBackColor = true;
             // 
-            // textBoxAnswer1
+            // buttonRussian1
             // 
-            this.textBoxAnswer1.Location = new System.Drawing.Point(494, 122);
-            this.textBoxAnswer1.Name = "textBoxAnswer1";
-            this.textBoxAnswer1.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAnswer1.TabIndex = 5;
+            this.buttonRussian1.Location = new System.Drawing.Point(856, 163);
+            this.buttonRussian1.Name = "buttonRussian1";
+            this.buttonRussian1.Size = new System.Drawing.Size(261, 86);
+            this.buttonRussian1.TabIndex = 5;
+            this.buttonRussian1.Text = "button4";
+            this.buttonRussian1.UseVisualStyleBackColor = true;
             // 
-            // textBoxAnswer2
+            // buttonRussian2
             // 
-            this.textBoxAnswer2.Location = new System.Drawing.Point(494, 194);
-            this.textBoxAnswer2.Name = "textBoxAnswer2";
-            this.textBoxAnswer2.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAnswer2.TabIndex = 6;
+            this.buttonRussian2.Location = new System.Drawing.Point(856, 324);
+            this.buttonRussian2.Name = "buttonRussian2";
+            this.buttonRussian2.Size = new System.Drawing.Size(261, 80);
+            this.buttonRussian2.TabIndex = 6;
+            this.buttonRussian2.Text = "button5";
+            this.buttonRussian2.UseVisualStyleBackColor = true;
             // 
-            // textBoxAnswer3
+            // buttonRussian3
             // 
-            this.textBoxAnswer3.Location = new System.Drawing.Point(494, 270);
-            this.textBoxAnswer3.Name = "textBoxAnswer3";
-            this.textBoxAnswer3.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAnswer3.TabIndex = 7;
+            this.buttonRussian3.Location = new System.Drawing.Point(856, 517);
+            this.buttonRussian3.Name = "buttonRussian3";
+            this.buttonRussian3.Size = new System.Drawing.Size(263, 80);
+            this.buttonRussian3.TabIndex = 7;
+            this.buttonRussian3.Text = "Люди живут благодаря друг другу";
+            this.buttonRussian3.UseVisualStyleBackColor = true;
             // 
             // Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBoxAnswer3);
-            this.Controls.Add(this.textBoxAnswer2);
-            this.Controls.Add(this.textBoxAnswer1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.Controls.Add(this.buttonRussian3);
+            this.Controls.Add(this.buttonRussian2);
+            this.Controls.Add(this.buttonRussian1);
+            this.Controls.Add(this.buttonOssetian3);
+            this.Controls.Add(this.buttonOssetian2);
+            this.Controls.Add(this.buttonOssetian1);
             this.Controls.Add(this.buttonRules);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Button buttonRules;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBoxAnswer1;
-        private System.Windows.Forms.TextBox textBoxAnswer2;
-        private System.Windows.Forms.TextBox textBoxAnswer3;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button buttonOssetian1;
+        private System.Windows.Forms.Button buttonOssetian2;
+        private System.Windows.Forms.Button buttonOssetian3;
+        private System.Windows.Forms.Button buttonRussian1;
+        private System.Windows.Forms.Button buttonRussian2;
+        private System.Windows.Forms.Button buttonRussian3;
     }
 }
 
