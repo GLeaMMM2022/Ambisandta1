@@ -39,6 +39,9 @@ namespace Ambisandta
             currentObject = sender;
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBoxResults.Items.Add(listBoxOssetian + "=" + comboBoxRussian.SelectedItem);
+        }
     }
 }
