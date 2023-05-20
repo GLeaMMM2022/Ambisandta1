@@ -93,7 +93,8 @@
             // 
             this.comboBoxRussian.FormattingEnabled = true;
             this.comboBoxRussian.Items.AddRange(new object[] {
-            "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели"});
+            "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели",
+            "Сытый голодного не разумеет"});
             this.comboBoxRussian.Location = new System.Drawing.Point(602, 184);
             this.comboBoxRussian.Name = "comboBoxRussian";
             this.comboBoxRussian.Size = new System.Drawing.Size(273, 33);
