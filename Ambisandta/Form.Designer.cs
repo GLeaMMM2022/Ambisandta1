@@ -35,6 +35,8 @@
             this.buttonRussian2 = new System.Windows.Forms.Button();
             this.labelOssetian1 = new System.Windows.Forms.Label();
             this.labelOssetian2 = new System.Windows.Forms.Label();
+            this.listBoxOssetian = new System.Windows.Forms.ListBox();
+            this.listBoxRussian = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // buttonRules
@@ -86,11 +88,37 @@
             this.labelOssetian2.TabIndex = 9;
             this.labelOssetian2.Text = "Ӕфсӕст стонджы не \'мбары";
             // 
+            // listBoxOssetian
+            // 
+            this.listBoxOssetian.FormattingEnabled = true;
+            this.listBoxOssetian.ItemHeight = 25;
+            this.listBoxOssetian.Items.AddRange(new object[] {
+            "Буцхаст уӕздан кӕны, уӕздан",
+            " магуса кӕны, магуса та сӕфтмӕ",
+            " цӕуы"});
+            this.listBoxOssetian.Location = new System.Drawing.Point(294, 580);
+            this.listBoxOssetian.Name = "listBoxOssetian";
+            this.listBoxOssetian.Size = new System.Drawing.Size(369, 154);
+            this.listBoxOssetian.TabIndex = 10;
+            // 
+            // listBoxRussian
+            // 
+            this.listBoxRussian.FormattingEnabled = true;
+            this.listBoxRussian.ItemHeight = 25;
+            this.listBoxRussian.Items.AddRange(new object[] {
+            "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели"});
+            this.listBoxRussian.Location = new System.Drawing.Point(856, 580);
+            this.listBoxRussian.Name = "listBoxRussian";
+            this.listBoxRussian.Size = new System.Drawing.Size(275, 154);
+            this.listBoxRussian.TabIndex = 11;
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.Controls.Add(this.listBoxRussian);
+            this.Controls.Add(this.listBoxOssetian);
             this.Controls.Add(this.labelOssetian2);
             this.Controls.Add(this.labelOssetian1);
             this.Controls.Add(this.buttonRussian2);
@@ -111,6 +139,8 @@
         private System.Windows.Forms.Button buttonRussian2;
         private System.Windows.Forms.Label labelOssetian1;
         private System.Windows.Forms.Label labelOssetian2;
+        private System.Windows.Forms.ListBox listBoxOssetian;
+        private System.Windows.Forms.ListBox listBoxRussian;
     }
 }
 
