@@ -67,8 +67,8 @@
             this.listBoxOssetian.FormattingEnabled = true;
             this.listBoxOssetian.ItemHeight = 25;
             this.listBoxOssetian.Items.AddRange(new object[] {
-            "Буцхаст уӕздан кӕны, уӕздан магуса кӕны, магуса та сӕфтмӕ цӕуы",
-            "Ӕфсӕст стонджы не \'мбары"});
+            "привет",
+            "артур"});
             this.listBoxOssetian.Location = new System.Drawing.Point(39, 184);
             this.listBoxOssetian.Name = "listBoxOssetian";
             this.listBoxOssetian.Size = new System.Drawing.Size(486, 379);

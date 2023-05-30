@@ -44,8 +44,9 @@ namespace Ambisandta
         private void button1_Click(object sender, EventArgs e)
         {
             //listBoxResults.Items.Add(listBoxOssetian + "=" + listBoxRussian.SelectedItem);
-            listView.Items.Add(listBoxOssetian.ToString());
-            listView.Items.Add(listBoxRussian.ToString());
+            listView.Items.Add(listBoxOssetian.ToString(),1);
+            
+            listView.Items.Add(listBoxRussian.ToString(),2);
             //listView.Columns.Add(listBoxRussian.Text);
             //listView.Columns.Add(listBoxOssetian.Text);
             
@@ -64,7 +65,15 @@ namespace Ambisandta
 
         private void buttonCheck_Click(object sender, EventArgs e)
         {
-            
+            for (int i = 0; i < listView.Items.Count; i++)
+            {
+                string listViewItemText = listView.Items[i].Text;
+
+                string listItemText = lstOssetian[i];
+
+                if (listViewItemText ==listViewItemText) { count++; }
+
+            }
         }
     }
 }
