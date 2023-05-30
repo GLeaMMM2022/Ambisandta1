@@ -33,10 +33,13 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelOssetian1 = new System.Windows.Forms.Label();
             this.listBoxOssetian = new System.Windows.Forms.ListBox();
-            this.listBoxResults = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxRussian = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.listBoxRussian = new System.Windows.Forms.ListBox();
+            this.listView = new System.Windows.Forms.ListView();
+            this.columnHeaderOssetian = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderRussian = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonCheck = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonRules
@@ -71,34 +74,14 @@
             this.listBoxOssetian.Size = new System.Drawing.Size(486, 379);
             this.listBoxOssetian.TabIndex = 10;
             // 
-            // listBoxResults
-            // 
-            this.listBoxResults.FormattingEnabled = true;
-            this.listBoxResults.ItemHeight = 25;
-            this.listBoxResults.Location = new System.Drawing.Point(947, 184);
-            this.listBoxResults.Name = "listBoxResults";
-            this.listBoxResults.Size = new System.Drawing.Size(486, 379);
-            this.listBoxResults.TabIndex = 11;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(942, 156);
+            this.label1.Location = new System.Drawing.Point(597, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 25);
             this.label1.TabIndex = 12;
             this.label1.Text = "Перевод пословиц";
-            // 
-            // comboBoxRussian
-            // 
-            this.comboBoxRussian.FormattingEnabled = true;
-            this.comboBoxRussian.Items.AddRange(new object[] {
-            "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели",
-            "Сытый голодного не разумеет"});
-            this.comboBoxRussian.Location = new System.Drawing.Point(602, 184);
-            this.comboBoxRussian.Name = "comboBoxRussian";
-            this.comboBoxRussian.Size = new System.Drawing.Size(273, 33);
-            this.comboBoxRussian.TabIndex = 13;
             // 
             // button1
             // 
@@ -110,15 +93,62 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // listBoxRussian
+            // 
+            this.listBoxRussian.FormattingEnabled = true;
+            this.listBoxRussian.ItemHeight = 25;
+            this.listBoxRussian.Items.AddRange(new object[] {
+            "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели",
+            "Сытый голодного не разумеет"});
+            this.listBoxRussian.Location = new System.Drawing.Point(602, 184);
+            this.listBoxRussian.Name = "listBoxRussian";
+            this.listBoxRussian.Size = new System.Drawing.Size(537, 379);
+            this.listBoxRussian.TabIndex = 15;
+            // 
+            // listView
+            // 
+            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderOssetian,
+            this.columnHeaderRussian});
+            this.listView.HideSelection = false;
+            this.listView.Location = new System.Drawing.Point(1211, 184);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(703, 379);
+            this.listView.TabIndex = 16;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
+            this.listView.SelectedIndexChanged += new System.EventHandler(this.listView_SelectedIndexChanged);
+            // 
+            // columnHeaderOssetian
+            // 
+            this.columnHeaderOssetian.Text = "На осетинском";
+            this.columnHeaderOssetian.Width = 150;
+            // 
+            // columnHeaderRussian
+            // 
+            this.columnHeaderRussian.Text = "На русском";
+            this.columnHeaderRussian.Width = 274;
+            // 
+            // buttonCheck
+            // 
+            this.buttonCheck.Location = new System.Drawing.Point(1180, 652);
+            this.buttonCheck.Name = "buttonCheck";
+            this.buttonCheck.Size = new System.Drawing.Size(155, 71);
+            this.buttonCheck.TabIndex = 17;
+            this.buttonCheck.Text = "Проверка";
+            this.buttonCheck.UseVisualStyleBackColor = true;
+            this.buttonCheck.Click += new System.EventHandler(this.buttonCheck_Click);
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1948, 916);
+            this.ClientSize = new System.Drawing.Size(2002, 933);
+            this.Controls.Add(this.buttonCheck);
+            this.Controls.Add(this.listView);
+            this.Controls.Add(this.listBoxRussian);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBoxRussian);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBoxResults);
             this.Controls.Add(this.listBoxOssetian);
             this.Controls.Add(this.labelOssetian1);
             this.Controls.Add(this.buttonRules);
@@ -135,10 +165,13 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label labelOssetian1;
         private System.Windows.Forms.ListBox listBoxOssetian;
-        private System.Windows.Forms.ListBox listBoxResults;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBoxRussian;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox listBoxRussian;
+        private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.ColumnHeader columnHeaderOssetian;
+        private System.Windows.Forms.ColumnHeader columnHeaderRussian;
+        private System.Windows.Forms.Button buttonCheck;
     }
 }
 

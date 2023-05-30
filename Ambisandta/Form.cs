@@ -20,6 +20,8 @@ namespace Ambisandta
             this.MouseClick += new MouseEventHandler(mouseClick);
         }
 
+        int count = 0;
+
         private void mouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button.ToString() == "Right") currentObject = null;
@@ -41,7 +43,28 @@ namespace Ambisandta
 
         private void button1_Click(object sender, EventArgs e)
         {
-            listBoxResults.Items.Add(listBoxOssetian + "=" + comboBoxRussian.SelectedItem);
+            //listBoxResults.Items.Add(listBoxOssetian + "=" + listBoxRussian.SelectedItem);
+            listView.Items.Add(listBoxOssetian.ToString());
+            listView.Items.Add(listBoxRussian.ToString());
+            //listView.Columns.Add(listBoxRussian.Text);
+            //listView.Columns.Add(listBoxOssetian.Text);
+            
+        }
+
+        List<string> lstOssetian= new List<string>() { "Буцхаст уӕздан кӕны, уӕздан магуса кӕны, магуса та сӕфтмӕ цӕуы",
+        "Ӕфсӕст стонджы не 'мбары"};
+
+        List<string> lstRussian = new List<string>() { "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели",
+            "Сытый голодного не разумеет" };
+
+        private void listView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCheck_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
