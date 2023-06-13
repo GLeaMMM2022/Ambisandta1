@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.buttonRules = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelOssetian1 = new System.Windows.Forms.Label();
@@ -111,6 +113,9 @@
             this.columnHeaderOssetian,
             this.columnHeaderRussian});
             this.listView.HideSelection = false;
+            this.listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2});
             this.listView.Location = new System.Drawing.Point(1211, 184);
             this.listView.Name = "listView";
             this.listView.Size = new System.Drawing.Size(703, 379);
@@ -122,7 +127,7 @@
             // columnHeaderOssetian
             // 
             this.columnHeaderOssetian.Text = "На осетинском";
-            this.columnHeaderOssetian.Width = 150;
+            this.columnHeaderOssetian.Width = 295;
             // 
             // columnHeaderRussian
             // 

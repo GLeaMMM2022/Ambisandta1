@@ -65,15 +65,26 @@ namespace Ambisandta
 
         private void buttonCheck_Click(object sender, EventArgs e)
         {
+
+            //listView.Columns.Add(listBoxOssetian.SelectedIndex.ToString(),1);
+            //listView.Columns.Add(listBoxRussian.SelectedIndex.ToString(),2);
+
+            listView.Items.Add(listBoxOssetian.SelectedIndex.ToString(), 1);
+            listView.Items.Add(listBoxRussian.SelectedIndex.ToString(),2);
+
+            /*
             for (int i = 0; i < listView.Items.Count; i++)
             {
                 string listViewItemText = listView.Items[i].Text;
+
+                
 
                 string listItemText = lstOssetian[i];
 
                 if (listViewItemText ==listViewItemText) { count++; }
 
-            }
+            }*/
+
         }
     }
 }
