@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
             this.buttonRules = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelOssetian1 = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@
             this.buttonRules.TabIndex = 1;
             this.buttonRules.Text = "Правила";
             this.buttonRules.UseVisualStyleBackColor = true;
+            this.buttonRules.Click += new System.EventHandler(this.buttonRules_Click);
             // 
             // labelOssetian1
             // 
@@ -70,7 +71,8 @@
             this.listBoxOssetian.ItemHeight = 25;
             this.listBoxOssetian.Items.AddRange(new object[] {
             "Буцхаст уӕздан кӕны, уӕздан магуса кӕны, магуса та сӕфтмӕ цӕуы",
-            "Ӕфсӕст стонджы не \'мбары"});
+            "Ӕфсӕст стонджы не \'мбары",
+            "Ӕвзӕрыл ма сыкъа вӕййы?"});
             this.listBoxOssetian.Location = new System.Drawing.Point(39, 184);
             this.listBoxOssetian.Name = "listBoxOssetian";
             this.listBoxOssetian.Size = new System.Drawing.Size(486, 379);
@@ -101,7 +103,8 @@
             this.listBoxRussian.ItemHeight = 25;
             this.listBoxRussian.Items.AddRange(new object[] {
             "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели",
-            "Сытый голодного не разумеет"});
+            "Сытый голодного не разумеет",
+            "На плохом еще рог бывает?"});
             this.listBoxRussian.Location = new System.Drawing.Point(602, 184);
             this.listBoxRussian.Name = "listBoxRussian";
             this.listBoxRussian.Size = new System.Drawing.Size(537, 379);
@@ -114,8 +117,8 @@
             this.columnHeaderRussian});
             this.listView.HideSelection = false;
             this.listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
+            listViewItem3,
+            listViewItem4});
             this.listView.Location = new System.Drawing.Point(1211, 184);
             this.listView.Name = "listView";
             this.listView.Size = new System.Drawing.Size(703, 379);

@@ -47,9 +47,11 @@ namespace Ambisandta
             listView.Items.Add(listBoxOssetian.ToString(),1);
             
             listView.Items.Add(listBoxRussian.ToString(),2);
+
+            
             //listView.Columns.Add(listBoxRussian.Text);
             //listView.Columns.Add(listBoxOssetian.Text);
-            
+
         }
 
         List<string> lstOssetian= new List<string>() { "Буцхаст уӕздан кӕны, уӕздан магуса кӕны, магуса та сӕфтмӕ цӕуы",
@@ -70,7 +72,7 @@ namespace Ambisandta
             //listView.Columns.Add(listBoxRussian.SelectedIndex.ToString(),2);
 
             listView.Items.Add(listBoxOssetian.SelectedIndex.ToString(), 1);
-            listView.Items.Add(listBoxRussian.SelectedIndex.ToString(),2);
+            listView.Items.Add(listBoxRussian.SelectedIndex.ToString(), 2);
 
             /*
             for (int i = 0; i < listView.Items.Count; i++)
