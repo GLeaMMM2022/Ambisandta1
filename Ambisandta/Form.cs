@@ -16,88 +16,72 @@ namespace Ambisandta
         private List<string> russianTranslations;
         private List<string> selectedProverbs;
 
-
-        private object currentObject = null;
         public Form()
         {
 
             selectedProverbs = new List<string>();
+            InitializeComponent();
+            InitializeProverbs();
+            InitializeListBoxes();
 
             InitializeComponent();
-            this.MouseMove += new MouseEventHandler(mouseEvent);
-            this.MouseClick += new MouseEventHandler(mouseClick);
+            
         }
 
         int count = 0;
 
-        private void mouseClick(object sender, MouseEventArgs e)
+        private void InitializeProverbs()
         {
-            if (e.Button.ToString() == "Right") currentObject = null;
+            ossetianProverbs = new List<string>() { "Буцхаст уӕздан кӕны, уӕздан магуса кӕны, магуса та сӕфтмӕ цӕуы",
+        "Ӕфсӕст стонджы не 'мбары","Ӕвзӕрыл ма сыкъа вӕййы?"};
+
+            russianTranslations = new List<string>() { "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели",
+            "Сытый голодного не разумеет","На плохом еще рог бывает?" };
+
         }
 
-        private void mouseEvent(object sender, MouseEventArgs e)
+        private void InitializeListBoxes() 
         {
 
-            //buttonRussian1.Location=new Point(Cursor.Position.X-25,Cursor.Position.Y-80);
-            if (currentObject != null)
-            currentObject.GetType().GetProperty("Location").SetValue(currentObject, new Point(Cursor.Position.X - 25, Cursor.Position.Y - 80));
+            proverbsListView.Items.Clear();
+
+            //заполняю пословицами на осет листБокс
+            foreach (var proverb in ossetianProverbs)
+            {
+                ossetianListBox.Items.Add(proverb.ToString());
+            }
+
+            //заполняю перевод
+            foreach (var translation in russianTranslations)
+            {
+                russianListBox.Items.Add(translation.ToString());
+            }
+
         }
 
-
-        private void buttonRussian1_Click(object sender, EventArgs e)
-        {
-            currentObject = sender;
-        }
-        
-
-        private void buttonAdd_Click(object sender, EventArgs e)
+        private void addButton_Click(object sender, EventArgs e)
         {
             //listBoxResults.Items.Add(listBoxOssetian + "=" + listBoxRussian.SelectedItem);
-           // listView.Items.Add(listBoxOssetian.ToString(),1);
+            //listView.Items.Add(listBoxOssetian.ToString(),1);
             //listView.Items.Add(listBoxRussian.ToString(),2);
-            if (listBoxOssetian.SelectedItems!=null && listBoxRussian.SelectedItems != null)
+
+            if (ossetianListBox.SelectedItems != null && russianListBox.SelectedItems != null)
             {
-                var selectedProverb= listBoxOssetian.SelectedItems.ToString();
-                var selectedTranslation= listBoxRussian.SelectedItems.ToString() ;
+                var selectedProverb = ossetianListBox.SelectedItems.ToString();
+                var selectedTranslation = russianListBox.SelectedItems.ToString();
 
-
+                //добавляем выбранную пословицу и перевод в листвью
                 var listViewItem = new ListViewItem(new[] { selectedProverb, selectedTranslation });
                 proverbsListView.Items.Add(listViewItem);
                 selectedProverbs.Add(selectedProverb);
 
             }
+
             else
             {
                 MessageBox.Show("Пожалуйста, выберите пословицу и ее перевод.");
 
             }
-
-            //listView.Columns.Add(listBoxRussian.Text);
-            //listView.Columns.Add(listBoxOssetian.Text);
-
-        }
-
-        List<string> lstOssetian= new List<string>() { "Буцхаст уӕздан кӕны, уӕздан магуса кӕны, магуса та сӕфтмӕ цӕуы",
-        "Ӕфсӕст стонджы не 'мбары","Ӕвзӕрыл ма сыкъа вӕййы?"};
-
-        List<string> lstRussian = new List<string>() { "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели",
-            "Сытый голодного не разумеет","На плохом еще рог бывает?" };
-
-        private void InitializeListBoxes() 
-        { 
-            proverbsListView.Items.Clear();
-
-            //заполняю пословицами на осет листБокс
-            /*foreach (var proverb in listBoxOssetian)
-            {
-                listBoxOssetian.Items.Add(proverb.ToString());
-            }
-
-            //заполняю перевод
-            foreach (var translation in listBoxRussian)
-            {
-                listBoxRussian.Items.Add(translation.ToString());
-            }*/
 
         }
 
@@ -117,29 +101,17 @@ namespace Ambisandta
 
                 if (index != -1 && russianTranslations[index] == translation)
                 {
-                    // Правильный перевод
+                    // правильный перевод
                     item.BackColor = System.Drawing.Color.LightGreen;
                 }
                 else
                 {
-                    // Неправильный перевод
+                    // неправильный перевод
                     item.BackColor = System.Drawing.Color.LightPink;
                 }
             }
 
-            /*
-            for (int i = 0; i < listView.Items.Count; i++)
-            {
-                string listViewItemText = listView.Items[i].Text;
-
-                
-
-                string listItemText = lstOssetian[i];
-
-                if (listViewItemText ==listViewItemText) { count++; }
-
-            }*/
-
+           
         }
 
         private void buttonRules_Click(object sender, EventArgs e)

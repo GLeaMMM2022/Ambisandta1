@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
             this.buttonRules = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelOssetian1 = new System.Windows.Forms.Label();
-            this.listBoxOssetian = new System.Windows.Forms.ListBox();
+            this.ossetianListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.listBoxRussian = new System.Windows.Forms.ListBox();
+            this.addButton = new System.Windows.Forms.Button();
+            this.russianListBox = new System.Windows.Forms.ListBox();
             this.proverbsListView = new System.Windows.Forms.ListView();
             this.columnHeaderOssetian = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderRussian = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -65,18 +65,14 @@
             this.labelOssetian1.TabIndex = 8;
             this.labelOssetian1.Text = "Пословицы на осетинском";
             // 
-            // listBoxOssetian
+            // ossetianListBox
             // 
-            this.listBoxOssetian.FormattingEnabled = true;
-            this.listBoxOssetian.ItemHeight = 25;
-            this.listBoxOssetian.Items.AddRange(new object[] {
-            "Буцхаст уӕздан кӕны, уӕздан магуса кӕны, магуса та сӕфтмӕ цӕуы",
-            "Ӕфсӕст стонджы не \'мбары",
-            "Ӕвзӕрыл ма сыкъа вӕййы?"});
-            this.listBoxOssetian.Location = new System.Drawing.Point(39, 184);
-            this.listBoxOssetian.Name = "listBoxOssetian";
-            this.listBoxOssetian.Size = new System.Drawing.Size(486, 379);
-            this.listBoxOssetian.TabIndex = 10;
+            this.ossetianListBox.FormattingEnabled = true;
+            this.ossetianListBox.ItemHeight = 25;
+            this.ossetianListBox.Location = new System.Drawing.Point(39, 184);
+            this.ossetianListBox.Name = "ossetianListBox";
+            this.ossetianListBox.Size = new System.Drawing.Size(486, 379);
+            this.ossetianListBox.TabIndex = 10;
             // 
             // label1
             // 
@@ -87,28 +83,24 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Перевод пословиц";
             // 
-            // buttonAdd
+            // addButton
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(635, 652);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(196, 72);
-            this.buttonAdd.TabIndex = 14;
-            this.buttonAdd.Text = "Выбрать";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.addButton.Location = new System.Drawing.Point(635, 652);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(196, 72);
+            this.addButton.TabIndex = 14;
+            this.addButton.Text = "Выбрать";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // listBoxRussian
+            // russianListBox
             // 
-            this.listBoxRussian.FormattingEnabled = true;
-            this.listBoxRussian.ItemHeight = 25;
-            this.listBoxRussian.Items.AddRange(new object[] {
-            "Баловень становится нежным, неженка - лодырем, а лодырь идёт к гибели",
-            "Сытый голодного не разумеет",
-            "На плохом еще рог бывает?"});
-            this.listBoxRussian.Location = new System.Drawing.Point(602, 184);
-            this.listBoxRussian.Name = "listBoxRussian";
-            this.listBoxRussian.Size = new System.Drawing.Size(537, 379);
-            this.listBoxRussian.TabIndex = 15;
+            this.russianListBox.FormattingEnabled = true;
+            this.russianListBox.ItemHeight = 25;
+            this.russianListBox.Location = new System.Drawing.Point(602, 184);
+            this.russianListBox.Name = "russianListBox";
+            this.russianListBox.Size = new System.Drawing.Size(537, 379);
+            this.russianListBox.TabIndex = 15;
             // 
             // proverbsListView
             // 
@@ -117,8 +109,8 @@
             this.columnHeaderRussian});
             this.proverbsListView.HideSelection = false;
             this.proverbsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
+            listViewItem3,
+            listViewItem4});
             this.proverbsListView.Location = new System.Drawing.Point(1211, 184);
             this.proverbsListView.Name = "proverbsListView";
             this.proverbsListView.Size = new System.Drawing.Size(703, 379);
@@ -154,10 +146,10 @@
             this.ClientSize = new System.Drawing.Size(2002, 933);
             this.Controls.Add(this.buttonCheck);
             this.Controls.Add(this.proverbsListView);
-            this.Controls.Add(this.listBoxRussian);
-            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.russianListBox);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBoxOssetian);
+            this.Controls.Add(this.ossetianListBox);
             this.Controls.Add(this.labelOssetian1);
             this.Controls.Add(this.buttonRules);
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -172,10 +164,10 @@
         private System.Windows.Forms.Button buttonRules;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label labelOssetian1;
-        private System.Windows.Forms.ListBox listBoxOssetian;
+        private System.Windows.Forms.ListBox ossetianListBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonAdd;
-        private System.Windows.Forms.ListBox listBoxRussian;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.ListBox russianListBox;
         private System.Windows.Forms.ListView proverbsListView;
         private System.Windows.Forms.ColumnHeader columnHeaderOssetian;
         private System.Windows.Forms.ColumnHeader columnHeaderRussian;
