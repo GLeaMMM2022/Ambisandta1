@@ -109,11 +109,23 @@ namespace Ambisandta
         private void buttonCheck_Click(object sender, EventArgs e)
         {
 
-            //listView.Columns.Add(listBoxOssetian.SelectedIndex.ToString(),1);
-            //listView.Columns.Add(listBoxRussian.SelectedIndex.ToString(),2);
+            foreach (ListViewItem item in proverbsListView.Items)
+            {
+                var proverb = item.SubItems[0].Text;
+                var translation = item.SubItems[1].Text;
+                var index = ossetianProverbs.IndexOf(proverb);
 
-            proverbsListView.Items.Add(listBoxOssetian.SelectedIndex.ToString(), 1);
-            proverbsListView.Items.Add(listBoxRussian.SelectedIndex.ToString(), 2);
+                if (index != -1 && russianTranslations[index] == translation)
+                {
+                    // Правильный перевод
+                    item.BackColor = System.Drawing.Color.LightGreen;
+                }
+                else
+                {
+                    // Неправильный перевод
+                    item.BackColor = System.Drawing.Color.LightPink;
+                }
+            }
 
             /*
             for (int i = 0; i < listView.Items.Count; i++)
