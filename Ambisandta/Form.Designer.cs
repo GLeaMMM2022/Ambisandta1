@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.buttonRules = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelOssetian1 = new System.Windows.Forms.Label();
             this.listBoxOssetian = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.listBoxRussian = new System.Windows.Forms.ListBox();
-            this.listView = new System.Windows.Forms.ListView();
+            this.proverbsListView = new System.Windows.Forms.ListView();
             this.columnHeaderOssetian = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderRussian = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonCheck = new System.Windows.Forms.Button();
@@ -87,15 +87,15 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Перевод пословиц";
             // 
-            // button1
+            // buttonAdd
             // 
-            this.button1.Location = new System.Drawing.Point(635, 652);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 72);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Выбрать";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAdd.Location = new System.Drawing.Point(635, 652);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(196, 72);
+            this.buttonAdd.TabIndex = 14;
+            this.buttonAdd.Text = "Выбрать";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // listBoxRussian
             // 
@@ -110,22 +110,22 @@
             this.listBoxRussian.Size = new System.Drawing.Size(537, 379);
             this.listBoxRussian.TabIndex = 15;
             // 
-            // listView
+            // proverbsListView
             // 
-            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.proverbsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderOssetian,
             this.columnHeaderRussian});
-            this.listView.HideSelection = false;
-            this.listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3,
-            listViewItem4});
-            this.listView.Location = new System.Drawing.Point(1211, 184);
-            this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(703, 379);
-            this.listView.TabIndex = 16;
-            this.listView.UseCompatibleStateImageBehavior = false;
-            this.listView.View = System.Windows.Forms.View.Details;
-            this.listView.SelectedIndexChanged += new System.EventHandler(this.listView_SelectedIndexChanged);
+            this.proverbsListView.HideSelection = false;
+            this.proverbsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2});
+            this.proverbsListView.Location = new System.Drawing.Point(1211, 184);
+            this.proverbsListView.Name = "proverbsListView";
+            this.proverbsListView.Size = new System.Drawing.Size(703, 379);
+            this.proverbsListView.TabIndex = 16;
+            this.proverbsListView.UseCompatibleStateImageBehavior = false;
+            this.proverbsListView.View = System.Windows.Forms.View.Details;
+            this.proverbsListView.SelectedIndexChanged += new System.EventHandler(this.listView_SelectedIndexChanged);
             // 
             // columnHeaderOssetian
             // 
@@ -153,16 +153,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2002, 933);
             this.Controls.Add(this.buttonCheck);
-            this.Controls.Add(this.listView);
+            this.Controls.Add(this.proverbsListView);
             this.Controls.Add(this.listBoxRussian);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBoxOssetian);
             this.Controls.Add(this.labelOssetian1);
             this.Controls.Add(this.buttonRules);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form";
-            this.Text = "Form1";
+            this.Text = "\\";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,9 +174,9 @@
         private System.Windows.Forms.Label labelOssetian1;
         private System.Windows.Forms.ListBox listBoxOssetian;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.ListBox listBoxRussian;
-        private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.ListView proverbsListView;
         private System.Windows.Forms.ColumnHeader columnHeaderOssetian;
         private System.Windows.Forms.ColumnHeader columnHeaderRussian;
         private System.Windows.Forms.Button buttonCheck;
